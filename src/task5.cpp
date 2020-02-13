@@ -10,7 +10,7 @@ int getSumInt(int arr[], int N)
 		}
 		i++;
 	}
-	i = Q-1;
+	i = N-1;
 	while (arr[i])
 	{
 		if (arr[i] > 0)
