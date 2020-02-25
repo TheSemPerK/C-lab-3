@@ -9,7 +9,7 @@ int getSumInt(int arr[], int N)
     {
         if (arr[i] < 0 && arr[j] > 0) 
         {
-            for (int a = i+1; a < j; a++)
+            for (int a = i + 1; a < j; a++)
                 sum += arr[a];
             break;
         }

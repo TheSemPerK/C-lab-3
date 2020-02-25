@@ -1,43 +1,39 @@
 #include<stdio.h>
-#include <string.h>
+#include<string.h>
+#define N 256
 
 int main()
 {
-    char buf[256];
-    int inWord = 0;
-    int countWords = 0;
-    int countSymbol = 0; 
-    int i = 0;
+    char buf[N] = { 0 };
+    int inWord = 0, countWords = 0, countSymb = 0, i = 0;
     printf("enter a line\n");
-    fgets(buf, 256, stdin);
-
+    fgets(buf, N, stdin);
     if (buf[strlen(buf) - 1] == '\n')
-        buf[strlen(buf) - 1] = 0;
-
+        buf[strlen(buf) - 1] = '\0';
     while (buf[i])
     {
-        if (buf[i] != ' ' && inWord == 0)
+        if (buf[i] != ' ' && inWord == 0) // enter in a word 
         {
             inWord = 1;
             countWords++;
-            countSymbol++;
+            countSymb++;
             putchar(buf[i]);
         }
-        else if (buf[i] != ' ' && inWord == 1)
+        else if (buf[i] != ' ' && inWord == 1) // move on word   
         {
-            countSymbol++;
+            countSymb++;
             putchar(buf[i]);
         }
-        else if (buf[i] == ' ' && inWord == 1)
+        else if (buf[i] == ' ' && inWord == 1)  // exit from a word   
         {
-            printf("-%d\n", countSymbol);
+            printf("-%d\n", countSymb);
             inWord = 0;
-            countSymbol = 0;
+            countSymb = 0;
         }
         i++;
     }
     if (inWord == 1)
-        printf("-%d\n", countSymbol);
+        printf("-%d\n", countSymb);
     printf("line contains:%d words\n", countWords);
     return 0;
 }

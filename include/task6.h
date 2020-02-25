@@ -1,3 +1,5 @@
-#include <stdio.h>
-#include <string.h>
-char* clear(char* line);
+#include<stdio.h>
+#include<time.h>
+#include<stdlib.h>
+
+int getSumMaxMin(int arr[], int N);

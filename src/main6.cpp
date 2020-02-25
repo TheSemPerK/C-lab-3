@@ -9,11 +9,11 @@ int main()
     srand(now);
     for (int i = 0; i < N; i++)
     {
-        char a = rand() % 2;      // random for "+" "-"
+        char a = rand() % 2;      
         if (a == 0)
-            arr[i] = 1 + rand() % 9;    // random for "+"arr[i]
+            arr[i] = 1 + rand() % 9;    
         if (a == 1)
-            arr[i] = -1 * (1 + rand() % 9); // random for "-"arr[i]
+            arr[i] = -1 * (1 + rand() % 9); 
     }
     for (int j = 0; j < N; j++)
         printf("%d ", arr[j]);

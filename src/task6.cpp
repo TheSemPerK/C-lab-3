@@ -5,8 +5,8 @@ int getSumMaxMin(int arr[], int N)
     int sum = 0;
     int i = 0;
     int j = N - 1;
-    int maxNumber = -9; 
-    int minNumber = 9;  
+    int maxNumber = -9; // -9 = minimum possible number in arr[]
+    int minNumber = 9;  // 9 = maximum possible number in arr[]
     int iMax = 0;
     int iMin = 0;
     for (int a = 0; a <= j; a++)
