@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include<locale>
+#include <locale>
+#include <string.h>
 #include "task1.h"
 
 int wordCount(char buf[])

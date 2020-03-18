@@ -1,4 +1,5 @@
 #include <locale>
+#include <string.h>
 #include "task4.h"
 int getSum(char buf[])
 {

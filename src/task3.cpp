@@ -1,5 +1,6 @@
 #include "task3.h"
 #include <stdio.h>
+#include <string.h>
 #include<locale>
 int getMaxWord(char buf[], char word[])
 {
