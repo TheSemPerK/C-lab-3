@@ -11,6 +11,8 @@ int main()
 	char word[255] = { 0 };
 	printf("Ведите  строку \n");
 	fgets(buf, 255, stdin);
+	if (buf[strlen(buf - 1)] == '\n')
+		buf[strlen(buf - 1)] = '\0';
 	printf("%d", getMaxWord(buf,word) );
 	return 0;
 }
