@@ -19,7 +19,7 @@ int getMaxWord(char buf[], char word[])
 		}
 		if (max < j)
 			max = j;
-		flag = i - j +1;
+		flag = i - j;
 		while (buf[i] == ' ' && i < len - 1)
 		{
 			i++;
@@ -27,7 +27,7 @@ int getMaxWord(char buf[], char word[])
 		}
 	}
 	j = 0;
-	for (i = flag; i < flag + max; i++)
+	for (i = flag; i <= flag + max; i++)
 	{
 		word[j] = buf[i];
 		j++;
