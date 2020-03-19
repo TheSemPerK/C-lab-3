@@ -10,7 +10,7 @@ int getMaxWord(char buf[], char word[])
 	int start = 0;
 	int i = 0, j = 0;
 	int count = 0;
-	for (i = 0; i < len - 1;i++)
+	for (i = 0;buf[i] !='\0';i++)
 	{
 		if (buf[i] != ' ' && flag==0)
 		{
