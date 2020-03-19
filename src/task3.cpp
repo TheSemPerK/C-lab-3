@@ -32,6 +32,7 @@ int getMaxWord(char buf[], char word[])
 		word[j] = buf[i];
 		j++;
 	}
+	word[j] = '\0';
 	puts(word);
 	return (max);
 }
