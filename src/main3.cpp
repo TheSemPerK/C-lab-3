@@ -1,6 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include<locale>
+#include <string.h>
 #include "task3.h"
 
 int main()
