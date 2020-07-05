@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
+#include "task6.h"
+
+int main()
+{
+	int arr[255] = { 0 };
+	time_t now;
+	time(&now);
+	srand(now);
+	for (int i = 0; i < 255; i++)
+	{
+		if (rand() % 2 * -1)
+			arr[i] = rand() % 100;
+		else
+			arr[i] = -rand() % 100;
+	}
+	printf("\nGenerate: %d\n", getSumMaxMin(arr, 255));
+	return 0;
+}
